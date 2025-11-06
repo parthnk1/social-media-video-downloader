@@ -1,19 +1,19 @@
-[tool.poetry]
+[project]
 name = "social-media-video-downloader"
 version = "0.1.0"
 description = "A simple, fast and powerful video downloader API for social media platforms."
-authors = ["Yasir Ali <yasirali.646@gmail.com>"]
-license = "MIT"
+authors = [
+  { name="Yasir Ali", email="yasirali.646@gmail.com" },
+]
 readme = "README.md"
-packages = [{include = "social_media_video_downloader"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-fastapi = "^0.95.0"
-uvicorn = {extras = ["standard"], version = "^0.21.1"}
-yt-dlp = "^2023.3.4"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn[standard]>=0.21.1",
+    "yt-dlp>=2023.3.4",
+]
