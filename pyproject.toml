@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "social-media-video-downloader"
 version = "0.1.0"
@@ -17,3 +21,6 @@ dependencies = [
     "uvicorn[standard]>=0.21.1",
     "yt-dlp>=2023.3.4",
 ]
+
+[tool.setuptools]
+packages = ["social_media_video_downloader"]
