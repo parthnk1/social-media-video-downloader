@@ -22,5 +22,6 @@ dependencies = [
     "yt-dlp>=2023.3.4",
 ]
 
-[tool.setuptools]
-packages = ["social_media_video_downloader"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["social_media_video_downloader*"]
